@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Login/cadastro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body bgcolor="#00FFFF">
+  <div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+     
+    <div class="content">      
+      
+      <div id="login" class="form-group">
+        <form method="post" action="logar"> 
+          <h1>Login</h1> 
+          <p> 
+            <label for="Email">Seu Email</label>
+            <input id="Email" required maxlength="50" name="Email" required="required" type="email" placeholder="ex. fulano@gmail.com"/>
+          </p>
+           
+          <p> 
+            <label for="Senha">Sua Senha</label>
+            <input id="Senha" required maxlength="50" name="Senha" required="required" type="password" placeholder="ex. senha" /> 
+          </p>
+           
+          <p> 
+            <input type="button" onclick="alert('Espere até avaliarmos sua conta!')" value="Login">
+          </p>
+           
+          <p class="link">
+            Ainda não tem conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+ 
+
+      <div id="cadastro" class="form-group">
+        <form method="post" action="cadastrar"> 
+          <h1>Cadastro viagem interestelar<br><img src="https://offloadmedia.feverup.com/saopaulosecreto.com/wp-content/uploads/2020/09/19074216/118708901_338909200490038_8390589771716169375_n-1024x698.jpg" title="logo do Neto's Help" width="300"></h1> 
+           
+          <p> 
+            <label for="title">Nome</label>
+            <input type="text" name="Nome" id="Nome" placeholder="Digite seu nome" class="form-control"
+               ></input>
+          </p>
+           
+          <p> 
+            <label for="Email">Seu e-mail</label>
+            <input id="Email" name="Email" required="required" type="email" placeholder="fulano@gmail.com"/> 
+          </p>
+           
+          <p> 
+            <label for="Senha">Sua senha</label>
+            <input id="Senha" name="Senha" required="required" type="password" placeholder="ex. minhasenha123"/>
+          </p>
+          <form>
+            <label for="datemax">Coloque sua data de nascimento:</label>
+            <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+          </form>
+          <p>
+            <form>
+                <h3>Porque você quer ir ao espaço?</h3>
+                <input type="checkbox" id="1" name="1" value="1">
+                <label for="1"> Sempre tive curiosidade</label><br>
+                <input type="checkbox" id="2" name="2" value="2">
+                <label for="2">Quero estudar o espaço</label><br>
+                <input type="checkbox" id="3" name="3" value="3">
+                <label for="3">Quero descobrir vida alienigena</label><br>
+                <input type="checkbox" id="4" name="4" value="4">
+                <label for="4">Descobrir os segredos do universo</label><br>
+              </form>
+          </p>
+          <form>
+            <h3>Se você tem alguma doença, escreva aqui:</h3><br>
+            <input type="text" id="doença" name="doença" placeholder="escreva a sua doença"><br>
+          </form><br>
+          <form >
+            <h3>Do que você tem mais medo sobre o espaço?</h3>
+            <input list="medo" name="medo">
+            <datalist id="medo">
+              <option value="A vasta imensidão ">
+              <option value="O que pode estar escondido lá">
+              <option value="Buracos negros">
+              <option value="Muito silencioso">
+            </datalist>
+          </form><br>
+          <p> 
+            <input type="button" onclick="alert('Conta cadastrada, avisaremos se você foi escolhido!')" value="Cadastrar">
+          </p>
+           
+          <p class="link">  
+            Já tem conta?
+            <a href="#paralogin"> Ir para Login </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>
